@@ -2,29 +2,137 @@
   width: 100%;
 }
 
+.section__home {
+  width: 1228px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
 .container__presentation {
-  background-color: #2D2E32;
+  background-color: rgba(0, 0, 0, .8);
   width: 100%;
-  height: 600px;
+  height: 520px;
+}
+
+.presentation__informations {
+  width: 100%;
+  height: 100%;
+
+  padding: 20px 0 30px 0;
 
   display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transform: skew(0deg);
 }
 
 .container__presentation div {
-
   height: 100%;
   width: 100%;
 }
 
-.presentation__left {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+/* =====    SECTION ABOUT --> BEGIN   ===== */
+.container__about {
+  background-color: #0a0a0a;
+  height: 100%;
 }
 
-.presentation__right {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  padding-left: 20px;
+.about__content {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 28px;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+}
+
+.photo_quote {
+  width: 100%;
+  height: 100%;
+}
+
+.photo_cover {
+  width: 100%;
+}
+
+.photo_cover img {
+  width: 50%;
+  height: 60%;
+  border-radius: 50%;
+  border: 15px solid #161515;
+  opacity: 1;
+}
+
+.quote {
+  width: 60%;
+  row-gap: 15px;
+}
+
+.quote cite {
+  width: 100%;
+  text-align: left;
+  font-size: 1.15rem;
+  color: #FFF;
+}
+
+.quotation {
+  color: #e3414b;
+  font-size: 1.08rem;
+  font-weight: 400;
+  letter-spacing: .2rem;
+}
+
+p.quotation {
+  text-align: right;
+}
+
+.about__description {
+  height: 100%;
+}
+/* =====    SECTION ABOUT --> END   ===== */
+
+
+
+/* =====    SECTION SKILLS --> BEGIN   ===== */
+.container__skills {
+  background-color: #FFF;
+}
+
+.skills__content {
+  width: 100%;
+}
+
+
+
+/* ===== SECTION O QUE FACO ===== */
+.o_que_faco {
+  width: 100%;
+  background-color: #FFF;
+}
+
+.icons__area_faco {
+  min-height: 300px;
+}
+
+
+
+/* ===== SECTION PROJECTS ===== */
+.my_projects__list {
+  width: 100%;
+}
+
+.my_projects__list > div {
+  width: 100%;
+  margin-top: 20px;
+}
+
+
+
+/* ===== SECTION CONTATO ===== */
+.formulario__contato {
+  width: 100%;
 }

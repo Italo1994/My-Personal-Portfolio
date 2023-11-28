@@ -4,12 +4,141 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  overflow-x: hidden;
 }
 
 body {
-  background-color: #181a1b;
+  background-color: #2D2E32;
+  background-image: url("./assets/background_parallax.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 
 a {
   text-decoration: none;
+}
+
+.flex_row {
+  display: flex;
+}
+
+.flex_column {
+  display: flex;
+  flex-direction: column;
+}
+
+.align_center_row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.align_center_column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.align_start_column {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.align_space_between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.align_column_space_between {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.align_column_space_around {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.title_red {
+  color: #e3414b;
+}
+
+.title_white {
+  color: #FFF;
+}
+
+.title_black {
+  color: #000;
+}
+
+.subtitle_main {
+  font-size: 1.1rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.section__title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 69px;
+  margin-bottom: 2.95rem;
+}
+
+.button_go_top {
+  position: fixed;
+  bottom: 15px;
+  right: 10px;
+
+  border-radius: 50px;
+  background-color: #e3414b;
+  color: #000;
+  padding: 12px;
+}
+
+.short_height {
+  width: 100%;
+  min-height: 300px;
+}
+
+.min_width300 {
+  min-width: 300px;
+}
+
+.max-width500 {
+  max-width: 500px;
+}
+
+.padding_bottom_default {
+  padding-bottom: 50px;
+}
+
+.primary_background {
+  background-color: #FFF;
+}
+
+.secondary_background {
+  background-color: #0a0a0a;
+}
+
+.row_gap_default {
+  row-gap: 20px;
+}
+
+.column_gap_default {
+  column-gap: 20px;
+}
+
+.row_gap_default_section {
+  row-gap: 50px;
 }

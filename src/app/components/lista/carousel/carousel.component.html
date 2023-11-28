@@ -1,0 +1,30 @@
+<div id="carousel" class="container__carousel">
+  <div>
+    <div
+      class="item"
+      [style.backgroundImage]="
+        'url(' + images[indexActiveImage] + ')'
+      "
+    ></div>
+
+    <div class="botoes-controle">
+      <button
+        *ngFor="let img of images; index as i"
+        [class.ativo]="i === indexActiveImage"
+        (click)="stopTimer(); activateImage(i)"></button>
+    </div>
+
+    <img
+      *ngFor="let img of images"
+      [src]="img"
+      width="100%"
+      height="100%"
+      style="opacity: 0; position: fixed"
+    />
+
+    <div class="informations__carousel">
+      <a href="#">Acesse o Site</a>
+      <a href="#">Acesse o Github</a>
+    </div>
+  </div>
+</div>

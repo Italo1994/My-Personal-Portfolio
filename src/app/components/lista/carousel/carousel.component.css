@@ -1,0 +1,83 @@
+.container__carousel {
+  width: 100%;
+  position: relative;
+  border: none;
+  border-radius: 2px;
+}
+
+.item {
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 500px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, .5);
+}
+
+.botoes-controle {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 8px;
+}
+
+.botoes-controle button {
+  background: #666666;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 12px;
+  width: 12px;
+}
+
+.botoes-controle button.ativo {
+  background: #ff0000;
+  cursor: default;
+}
+
+.area__setas {
+  background-color: transparent;
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  top: 11rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.area__setas button.seta {
+  border: 0;
+  background-color: transparent;
+  padding: 5px;
+  cursor: pointer;
+  color: #FFF;
+}
+
+.area__setas button.seta > i {
+  font-size: 1.4rem;
+}
+
+.informations__carousel {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  position: absolute;
+  bottom: 28px;
+  left: 44%;
+}
+
+.informations__carousel a {
+  display: inline-block;
+  padding: 10px;
+  color: #FFF;
+  border: .95px solid lightgray;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.informations__carousel a:hover {
+  background-color: #000;
+  transition: all 1s ease-in-out;
+}

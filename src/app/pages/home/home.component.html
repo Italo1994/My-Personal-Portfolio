@@ -1,10 +1,81 @@
 <main class="container">
   <section class="container__presentation">
-    <div class="presentation__left">
-      a
+    <div class="presentation__informations">
+      <app-box-information [sampleInformation]="true"></app-box-information>
     </div>
-    <div class="presentation__right">
-      b
+  </section>
+
+  <section id="about" class="container__about">
+    <div class="section__home align_center_row">
+      <div class="about__content ">
+        <div class="photo_quote align_center_row">
+          <div class="photo_cover align_center_row">
+            <img src="../../../assets/italo_profile.png" alt="" srcset="">
+          </div>
+
+          <div class="quote align_start_column">
+            <p class="quotation">Citação</p>
+            <cite>
+              <span class="quotation">"</span>Seja uma referência de qualidade. As pessoas <br>não estão acostumadas a ambientes
+              onde a <br>excelência é esperada.<span class="quotation">"</span> <br><br>
+              <p class="quotation">- Steve Jobs</p>
+            </cite>
+          </div>
+        </div> <!-- photo__quote -->
+
+        <div class="about__description align_center_row">
+          <app-box-information [fullInformation]="true"></app-box-information>
+        </div> <!-- about__description -->
+
+      </div> <!-- about__content -->
+    </div> <!-- section__home -->
+  </section>
+
+  <section class="container__skills">
+    <div class="section__home">
+      <h1 class="section__title title_red">Minhas Skills</h1>
+      <div class="skills__content">
+        <app-card [sliderActive]="false" [normalCard]="true" [bigCard]="false"></app-card>
+      </div>
+    </div>
+  </section>
+
+  <section id="faco" class="o_que_faco">
+    <div class="section__home align_center_column row_gap_default_section">
+      <div class="area_faco">
+        <h1 class="section__title title_red">O que faço</h1>
+        <h2 class="subtitle_main">Crio soluções através do desenvolvimento de software</h2>
+      </div>
+      <div class="area_faco icons__area_faco align_center_row">
+        <app-card [iconIsActive]="true" [normalCard]="false" [bigCard]="false"></app-card>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="my_projects primary_background">
+    <div class="section__home">
+      <h1 class="section__title title_red">Projetos</h1>
+      <div class="my_projects__list">
+        <app-carousel
+          [images]="[
+            '../../assets/music_library_project.png',
+            '../../assets/site_salao_de_beleza.png',
+            '../../assets/template_event.png'
+          ]"
+        ></app-carousel>
+        <div class="align_center_row">
+          <app-button label="Ver todos"></app-button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato" class="area__contato primary_background padding_bottom_default">
+    <div class="section__home">
+      <h1 class="section__title title_red">Fale Comigo</h1>
+      <div class="formulario__contato align_center_row">
+        <app-form></app-form>
+      </div>
     </div>
   </section>
 </main>

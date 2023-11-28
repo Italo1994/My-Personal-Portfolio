@@ -1,0 +1,9 @@
+<div *ngIf="isDefaultButton" class="container">
+  <div class="container__button-text">
+    <a href="#">{{label}}</a>
+  </div>
+</div>
+
+<div *ngIf="isSubmitActive" class="container__submit">
+  <button class="button__submit" type="submit">{{label}} <i class="fa-regular fa-paper-plane"></i> </button>
+</div>

@@ -1,0 +1,11 @@
+@media screen and (max-width: 550px) {
+  .container__paragraph {
+    font-size: 1.2rem;
+    text-align: justify;
+    padding: 0px 20px;
+  }
+
+  .container__template_full > h1 {
+    padding-left: 20px;
+  }
+}

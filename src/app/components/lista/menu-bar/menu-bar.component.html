@@ -1,13 +1,39 @@
-<nav class="navbar">
-  <a href="#" id="navbar__logo">Italo Hortiz</a>
-  <ul class="navbar__menu">
-    <li><a href="#" class="navbar__menuLink">Serviços</a></li>
-    <li><a href="#" class="navbar__menuLink">Projetos</a></li>
-    <li><a href="#" class="navbar__menuLink">Contatos</a></li>
+<nav *ngIf="isHorizontalMenu" id="top" class="navbar">
+  <ul class="navbar__menu align_center_row">
+    <li><a href="#" class="navbar__menuLink">Home</a></li>
+    <li><a href="#about" class="navbar__menuLink">Quem sou</a></li>
+    <li><a href="#faco" class="navbar__menuLink">O que faço</a></li>
+    <li><a href="#projects" class="navbar__menuLink">Portfólio</a></li>
+    <li><a href="#" class="navbar__menuLink">Blog</a></li>
+    <li><a href="#contato" class="navbar__menuLink">Fale comigo</a></li>
   </ul>
-  <ul class="navbar__social">
-    <li><a href="#" class="navbar__socialItem">Github</a></li>
-    <li><a href="#" class="navbar__socialItem">Instagram</a></li>
-    <li><a href="#" class="navbar__socialItem">E-mail</a></li>
+  <ul class="navbar__social align_center_row">
+    <li><a href="https://github.com/Italo1994" class="navbar__socialItem" target="__blank"> <i class="fa-brands fa-github"></i> </a></li>
+    <li><a href="https://www.linkedin.com/in/italo-hortiz-do-nascimento-32454a165/" class="navbar__socialItem" target="__blank"> <i class="fa-brands fa-linkedin"></i> </a></li>
+    <li><a href="#" class="navbar__socialItem email_item"> <i class="fa-regular fa-envelope"></i> </a></li>
+    <li><a href="https://www.instagram.com/italo__dev/" class="navbar__socialItem"> <i class="fa-brands fa-instagram"></i> </a></li>
   </ul>
+</nav>
+
+<nav *ngIf="isVerticalMenu" id="top" class="navbar_vertical align_center_column">
+  <div *ngIf="mainMenu" class="vertical__main_menu short_height align_center_column">
+    <h4 class="title_red">Menu</h4>
+    <ul class="min_width300 align_center_column">
+      <li><a href="#" class="navbar__menuLink">Home</a></li>
+      <li><a href="#about" class="navbar__menuLink">Quem sou</a></li>
+      <li><a href="#faco" class="navbar__menuLink">O que faço</a></li>
+      <li><a href="#projects" class="navbar__menuLink">Portfólio</a></li>
+      <li><a href="#" class="navbar__menuLink">Blog</a></li>
+      <li><a href="#contato" class="navbar__menuLink">Fale comigo</a></li>
+    </ul>
+  </div>
+  <div *ngIf="socialMenu" class="vertical__social_menu short_height align_center_column">
+    <h4 class="title_red">Redes Sociais</h4>
+    <ul *ngIf="socialMenu" class="navbar__social min_width300 align_center_row">
+      <li><a href="https://github.com/Italo1994" class="navbar__socialItem" target="__blank"> <i class="fa-brands fa-github"></i> </a></li>
+      <li><a href="https://www.linkedin.com/in/italo-hortiz-do-nascimento-32454a165/" class="navbar__socialItem" target="__blank"> <i class="fa-brands fa-linkedin"></i> </a></li>
+      <li><a href="#" class="navbar__socialItem email_item"> <i class="fa-regular fa-envelope"></i> </a></li>
+      <li><a href="https://www.instagram.com/italo__dev/" class="navbar__socialItem"> <i class="fa-brands fa-instagram"></i> </a></li>
+    </ul>
+  </div>
 </nav>

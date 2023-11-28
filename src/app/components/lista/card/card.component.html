@@ -1,0 +1,41 @@
+<div *ngIf="normalCard" class="container__normal_card">
+  <figure class="picture" *ngFor="let data of dataCards; let i = index;">
+    <img src={{data.url}} alt="" srcset="">
+    <figcaption class="subtitle">{{data.name}}</figcaption>
+  </figure>
+</div>
+
+<div *ngIf="bigCard" class="container__big_card">
+  <div id="big_card__img_id" class="big_card__image">
+    <div *ngFor="let project of dataProjects">
+      <img src={{project.srcImg}} alt="">
+      <div class="big_card__image_button">
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div *ngIf="sliderActive" class="container_slider">
+  <div class="slider__wrap">
+    <div class="slider__main">
+      <div class="slider__item">
+        <figure class="picture" *ngFor="let data of dataCards; let i = index;">
+          <img src={{data.url}} alt="" srcset="">
+          <figcaption class="subtitle">{{data.name}}</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div *ngIf="iconIsActive" class="container__icons">
+  <ul class="align_center_row">
+    <li class="icon" *ngFor="let icon of dataIcons; let i = index;">
+      <i class={{icon.class}}></i>
+      <article>
+        <span>{{icon.description}}</span>
+      </article>
+    </li>
+  </ul>
+</div>

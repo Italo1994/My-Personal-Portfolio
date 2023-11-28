@@ -1,0 +1,27 @@
+@media screen and (max-width: 550px) {
+  .section__home {
+    width: 100%;
+  }
+
+  /* ===== ABOUT SECTION ===== */
+  .about__content {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .photo_quote {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .photo_cover img {
+    width: 69%;
+    height: 90%;
+  }
+
+  .about__description {
+    padding-top: 1.5rem;
+  }
+
+
+}

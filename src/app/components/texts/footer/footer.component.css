@@ -1,0 +1,46 @@
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  color: #FFF;
+}
+
+.footer__content {
+  min-height: 70vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.footer__item {
+  column-gap: 20px;
+}
+
+.emoji_area {
+  position: relative;
+}
+
+.emoji {
+  position: absolute;
+  top: 0;
+}
+
+.contact_area {
+  width: 100%;
+  min-height: 150px;
+  row-gap: 20px;
+}
+
+.contact_item {
+  font-weight: 700;
+}
+
+#contact > div {
+  width: 100%;
+  height: 100%;
+}
+
+.copyright {
+  min-height: 20vh;
+}
