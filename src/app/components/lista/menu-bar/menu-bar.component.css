@@ -20,11 +20,7 @@
 
 .navbar__menu {
   min-width: 650px;
-}
-
-.vertical_menu ul {
-  row-gap: 20px;
-  border: 1px solid orange;
+  border: 1px solid green;
 }
 
 .navbar__menuLink, .navbar__socialItem {
@@ -47,6 +43,9 @@
 
 .navbar__social {
   min-width: 250px;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 25px;
 }
 
 .navbar__socialItem {
@@ -62,6 +61,11 @@
 
 .navbar_vertical {
   width: 100%;
+}
+
+.vertical_menu ul {
+  row-gap: 20px;
+  border: 1px solid orange;
 }
 
 .vertical__main_menu, .vertical__social_menu {
