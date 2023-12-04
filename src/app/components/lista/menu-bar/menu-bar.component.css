@@ -20,7 +20,6 @@
 
 .navbar__menu {
   min-width: 650px;
-  border: 1px solid green;
 }
 
 .navbar__menuLink, .navbar__socialItem {
@@ -55,7 +54,6 @@
 
 .navbar__menu li:hover {
   color: #e3414b;
-  transform: scale(1.1);
   transition: all 1s ease-in-out;
 }
 
@@ -65,7 +63,6 @@
 
 .vertical_menu ul {
   row-gap: 20px;
-  border: 1px solid orange;
 }
 
 .vertical__main_menu, .vertical__social_menu {

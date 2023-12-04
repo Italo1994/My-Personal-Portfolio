@@ -1,0 +1,27 @@
+@media screen and (max-width: 555px) {
+  .footer__content {
+
+    grid-template-columns: 1fr;
+
+  }
+
+  .footer__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .copyright {
+    min-height: 20vh;
+    letter-spacing: 4px;
+  }
+
+  .emoji_area {
+    left: 45%;
+  }
+
+  .contact_area {
+    display: flex;
+  }
+}

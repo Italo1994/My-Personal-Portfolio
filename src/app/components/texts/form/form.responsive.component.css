@@ -1,0 +1,29 @@
+@media screen and (max-width: 555px) {
+  .container__form {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  form {
+    width: 100%;
+  }
+
+  input {
+    min-width: 200px;
+    max-width: 100%;
+  }
+
+  p {
+    padding: 0 10px;
+  }
+
+  .form__group {
+    width: 100%;
+    flex-direction: column;
+    row-gap: 15px;
+  }
+
+  .form__item {
+    width: 100%;
+  }
+}

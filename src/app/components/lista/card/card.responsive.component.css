@@ -1,3 +1,10 @@
-.container__normal_card {
-  grid-template-columns: repeat(3, 1fr);
+@media screen and (max-width: 555px) {
+  .container__normal_card {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .container__icons ul {
+    flex-direction: column;
+    row-gap: 20px;
+  }
 }

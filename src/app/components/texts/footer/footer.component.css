@@ -3,27 +3,33 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  position: relative;
   color: #FFF;
 }
 
 .footer__content {
-  min-height: 70vh;
+  min-height: 50vh;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-}
-
-.footer__item {
-  column-gap: 20px;
-}
-
-.emoji_area {
+  grid-template-columns: repeat(2, 1fr);
   position: relative;
 }
 
-.emoji {
+.footer__item {
+  width: 100%;
+  column-gap: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.emoji_area {
   position: absolute;
   top: 0;
+  left: 48.5%;
+}
+
+.social__area_item {
+  display: flex;
+  justify-content: center;
 }
 
 .contact_area {

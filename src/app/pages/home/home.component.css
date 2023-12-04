@@ -133,6 +133,10 @@ p.quotation {
 
 
 /* ===== SECTION CONTATO ===== */
+.area__contato {
+  width: 100%;
+}
+
 .formulario__contato {
   width: 100%;
 }

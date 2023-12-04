@@ -19,7 +19,9 @@ import { Subscription, timer } from 'rxjs';
 @Component({
   selector: 'app-carousel',
   templateUrl: './carousel.component.html',
-  styleUrls: ['./carousel.component.css'],
+  styleUrls: ['./carousel.component.css',
+              './carousel.responsive.component.css'
+            ],
   animations: [
 
   ]
