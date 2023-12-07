@@ -37,7 +37,8 @@
 
 .navbar__menuLink:hover {
   color: #e3414b;
-  transition: color .8s;
+
+  transition: all 1s ease-in-out;
 }
 
 .navbar__social {
@@ -52,11 +53,14 @@
   font-size: 1.4rem;
 }
 
+<<<<<<< HEAD
 .navbar__menu li:hover {
   color: #e3414b;
   transition: all 1s ease-in-out;
 }
 
+=======
+>>>>>>> 4d98f17 (style: modify and change the form component style to be responsive)
 .navbar_vertical {
   width: 100%;
 }

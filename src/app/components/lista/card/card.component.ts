@@ -38,21 +38,20 @@ export class CardComponent implements OnInit {
 
   @Input() normalCard: boolean = true;
   @Input() bigCard: boolean = false;
-  @Input() sliderActive: boolean = false;
   @Input() iconIsActive: boolean = false;
 
   constructor() {
     if(this.normalCard === true) {
-      this.sliderActive = false;
+      this.bigCard = false;
       this.iconIsActive = false;
     }
-    else if(this.sliderActive === true) {
+    else if(this.bigCard === true) {
       this.normalCard = false;
       this.iconIsActive = false;
     }
     else if(this.iconIsActive === true) {
       this.normalCard = false;
-      this.sliderActive = false;
+      this.bigCard = false;
     }
   }
 

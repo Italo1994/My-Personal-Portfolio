@@ -5,6 +5,10 @@
 
   .container__icons ul {
     flex-direction: column;
+<<<<<<< HEAD
     row-gap: 20px;
+=======
+    column-gap: 20px;
+>>>>>>> 4d98f17 (style: modify and change the form component style to be responsive)
   }
 }

@@ -1,6 +1,7 @@
 @media screen and (max-width: 550px) {
   .section__home {
     width: 100%;
+    border: 4px solid green;
   }
 
   /* ===== ABOUT SECTION ===== */
@@ -23,6 +24,7 @@
     padding-top: 1.5rem;
   }
 
+<<<<<<< HEAD
   .formulario__contato {
     width: 100%;
   }
@@ -31,5 +33,14 @@
   }
 
   .my_projects__list {
+=======
+  .area__contato {
+    width: 100%;
+
+  }
+
+  .formulario__contato {
+    width: 100%;
+>>>>>>> 4d98f17 (style: modify and change the form component style to be responsive)
   }
 }

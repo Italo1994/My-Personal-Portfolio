@@ -1,5 +1,6 @@
 @media screen and (max-width: 555px) {
   .container__form {
+<<<<<<< HEAD
     max-width: 100%;
     overflow-x: hidden;
   }
@@ -25,5 +26,25 @@
 
   .form__item {
     width: 100%;
+=======
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container__form > p {
+    width: 250px;
+    border: 1px solid red;
+    text-align: justify;
+    line-height: 1.2rem;
+  }
+
+  .form__group {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+>>>>>>> 4d98f17 (style: modify and change the form component style to be responsive)
   }
 }

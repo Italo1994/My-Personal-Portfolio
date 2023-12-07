@@ -16,21 +16,8 @@
   </div>
 </div>
 
-<div *ngIf="sliderActive" class="container_slider">
-  <div class="slider__wrap">
-    <div class="slider__main">
-      <div class="slider__item">
-        <figure class="picture" *ngFor="let data of dataCards; let i = index;">
-          <img src={{data.url}} alt="" srcset="">
-          <figcaption class="subtitle">{{data.name}}</figcaption>
-        </figure>
-      </div>
-    </div>
-  </div>
-</div>
-
 <div *ngIf="iconIsActive" class="container__icons">
-  <ul class="align_center_row">
+  <ul>
     <li class="icon" *ngFor="let icon of dataIcons; let i = index;">
       <i class={{icon.class}}></i>
       <article>
