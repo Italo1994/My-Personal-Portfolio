@@ -15,7 +15,7 @@
 
 .footer__item {
   width: 100%;
-  column-gap: 20px;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -48,5 +48,5 @@
 }
 
 .copyright {
-  min-height: 20vh;
+  min-height: 10vh;
 }

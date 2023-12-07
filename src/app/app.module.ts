@@ -8,11 +8,15 @@ import { TextsModule } from './components/texts/texts.module';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
+import { BlogComponent } from './pages/blog/blog.component';
+import { NotFoundComponent } from './pages/not-found/not-found.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
+    BlogComponent,
+    NotFoundComponent,
   ],
   imports: [
     BrowserModule,
