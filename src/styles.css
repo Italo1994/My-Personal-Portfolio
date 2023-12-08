@@ -7,6 +7,10 @@
   overflow-x: hidden;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #2D2E32;
   background-image: url("./assets/background_parallax.jpg");
